@@ -10,7 +10,7 @@ const ListBody: React.FC<Props> = ({ removeCard, cards }) => {
   return (
     <ul className="list-body">
       {cards.map((card: any) => (
-        <ListCard removeCard={removeCard} card={card} />
+        <ListCard removeCard={removeCard} card={card} key={card.id} />
       ))}
     </ul>
   );

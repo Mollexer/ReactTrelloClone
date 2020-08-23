@@ -23,7 +23,7 @@ const App: React.FC = () => {
     <div className="app" onDoubleClick={() => console.log(lists)}>
       <div className="wrapper">
         {lists.map((list) => (
-          <List removeList={removeList} list={list} />
+          <List removeList={removeList} list={list} key={list.id} />
         ))}
         <AddListButton addList={addList} />
       </div>

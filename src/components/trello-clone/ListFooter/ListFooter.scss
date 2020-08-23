@@ -1,0 +1,64 @@
+.list-footer {
+  font-weight: normal;
+  margin-top: 8px;
+  &__button {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      background-color: #555;
+    }
+  }
+  &__icon {
+    width: 14px;
+    margin-right: 8px;
+  }
+
+  &__input {
+    width: 100%;
+    margin: 0;
+    padding: 4px 8px;
+    font-size: 14px;
+    border: none;
+    background-color: rgb(112, 111, 111);
+    padding: 6px 8px;
+    background-color: #39424b;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 #20232c;
+    height: 85px;
+    outline: none;
+    resize: none;
+  }
+  &__confirm {
+    display: inline-block;
+    padding: 6px 8px;
+    border-radius: 4px;
+    background-color: #39424b;
+    cursor: pointer;
+  }
+  &__cancel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 8px;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    &:hover {
+      background-color: #555;
+    }
+    & img {
+      transform: rotateZ(-45deg);
+      width: 14px;
+    }
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}

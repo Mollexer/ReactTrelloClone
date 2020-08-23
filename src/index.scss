@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #d1d6d9;
+  user-select: none;
+}
+
+body {
+  background-color: #181b20;
+}
+
+::-moz-placeholder {
+  color: #eee;
+}
+::-webkit-input-placeholder {
+  color: #eee;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #556474;
+  box-shadow: inset 0 0 5px rgba($color: #000000, $alpha: 0.5);
+  border-radius: 16px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2c353d;
+  border: 2px solid #4a5765;
+  border-radius: 16px;
+}
+
+@import './components/App/App';
+@import './components/trello-clone/List/List';
+@import './components/trello-clone/AddListButton/AddListButton';
+@import './components/trello-clone/ListHeader/ListHeader';
+@import './components/trello-clone/ListBody/ListBody';
+@import './components/trello-clone/ListCard/ListCard';
+@import './components/trello-clone/ListFooter/ListFooter';
